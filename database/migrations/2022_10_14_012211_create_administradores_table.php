@@ -15,7 +15,10 @@ class CreateAdministradoresTable extends Migration
     {
         Schema::create('administradores', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nombres');
+            $table->string('apellidos');
+            $table->timestamp('created_at')->nullable();            
+            $table->timestamp('updated_at')->nullable();            
         });
     }
 
