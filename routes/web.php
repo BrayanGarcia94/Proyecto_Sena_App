@@ -22,4 +22,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //rutas administradores
-Route::post('api/datos/guardar', [App\Http\Controllers\AdministradoresController::class, 'guardar']);
+//Esto envía datos
+Route::post('api/administradores/guardar', [App\Http\Controllers\AdministradoresController::class, 'guardar']);
+//Esto elimina datos
+Route::delete('api/administradores/eliminar', [App\Http\Controllers\AdministradoresController::class, 'eliminar']);
+//Esto selecciona datos
+Route::get('api/administradores/index', [App\Http\Controllers\AdministradoresController::class, 'index']);
+Route::get('api/administradores/seleccionar', [App\Http\Controllers\AdministradoresController::class, 'seleccionar']);
+//Esto actualiza datos
+Route::put('api/administradores/actualizar', [App\Http\Controllers\AdministradoresController::class, 'actualizar']);
