@@ -23,12 +23,12 @@
         <tbody>
             <tr>
                 <th scope="row">1</th>
-                <th scope="row"><img src="/img/logo3.png" alt="" width="70" height="45" class="d-inline-block align-text-top"></th>
+                <th scope="row"><img src="img/logo3.png" alt="Imagen de muestra" width="70" height="45" class="d-inline-block align-text-top"></th>
                 <td scope="row">Cuadro 0.5 * 0.5</td>
                 <td scope="row">Cuadro de medidas 0.5 * 0.5 con contenido modificable</td>
                 <td scope="row">45000</td>
                 <td scope="row">15</td>
-                <td scope="row">
+                <td scope="row"> 
                     <button type="button" class="btn btn-success">Editar</button>
                     <button type="button" class="btn btn-danger">Eliminar</button>
                 </td>

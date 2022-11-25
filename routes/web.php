@@ -11,6 +11,9 @@ Route::get('/usuarios', function () {
 Route::get('/productos', function () {
     return view('productos');
 });
+Route::get('/productos', function () {
+    return view('ventas');
+});
 
 Auth::routes();
 
