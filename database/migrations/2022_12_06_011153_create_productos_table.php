@@ -15,7 +15,15 @@ class CreateProductosTable extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nombre');
+            $table->string('descripcion');
+            $table->string('precio');
+            $table->string('cantidad');
+            $table->unsignedBigInteger('id_referencia');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable(); 
+
+            $table->foreign('id_referencia')->references('id')->on('referencias');
         });
     }
 

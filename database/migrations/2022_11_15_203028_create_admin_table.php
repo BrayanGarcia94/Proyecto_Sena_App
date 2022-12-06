@@ -13,8 +13,15 @@ class CreateAdminTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin', function (Blueprint $table) {
+        Schema::create('admins', function (Blueprint $table) {
             $table->id();
+            $table->string('nombres');
+            $table->string('apellidos');
+            $table->string('contrasena');
+            $table->string('telefono');
+            $table->string('email');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();            
         });
     }
 
