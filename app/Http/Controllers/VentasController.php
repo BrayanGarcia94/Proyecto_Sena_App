@@ -15,18 +15,17 @@ class VentasController extends Controller
     }
     public function seleccionar(Request $request)
     {
-        $ventas = ventas::select("id","nombres")->get();
+        $ventas = ventas::select("id","valor")->get();
         return ["data"=>$ventas];
     }
     public function guardar(Request $request)
     {
         $ventas = new ventas;
  
-        $ventas->nombres = $request->nombres;
-        $ventas->apellidos = $request->apellidos;
-        $ventas->contrasena = $request->contrasena;
-        $ventas->telefono = $request->telefono;
-        $ventas->email = $request->email;
+        $ventas->valor = $request->valor;
+        $ventas->fecha = $request->fecha;
+        $ventas->id_usuario = $request->id_usuario;
+        $ventas->info_envio = $request->info_envio;
  
         $ventas->save();
     }
@@ -34,11 +33,10 @@ class VentasController extends Controller
     {
         $ventas = ventas::find($request->id);
  
-        $ventas->nombres = $request->nombres;
-        $ventas->apellidos = $request->apellidos;
-        $ventas->contrasena = $request->contrasena;
-        $ventas->telefono = $request->telefono;
-        $ventas->email = $request->email;
+        $ventas->valor = $request->valor;
+        $ventas->fecha = $request->fecha;
+        $ventas->id_usuario = $request->id_usuario;
+        $ventas->info_envio = $request->info_envio;
  
         $ventas->save();
     }

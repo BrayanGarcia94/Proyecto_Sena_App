@@ -2,6 +2,6 @@
 
 @section('content')
     <div id="app">
-        <productos-component></productos-component>
+        <inicio_sesion-component></inicio_sesion-component>
     </div>
 @endsection

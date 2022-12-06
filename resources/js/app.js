@@ -22,6 +22,13 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('usuarios-component', require('./components/UsuariosComponent.vue').default);
 Vue.component('productos-component', require('./components/ProductosComponent.vue').default);
+Vue.component('administradores-component', require('./components/AdministradoresComponent.vue').default);
+Vue.component('detalle_ventas-component', require('./components/DetalleVentasComponent.vue').default);
+Vue.component('ventas-component', require('./components/VentasComponent.vue').default);
+Vue.component('referencias-component', require('./components/ReferenciasComponent.vue').default);
+Vue.component('inicio_sesion-component', require('./components/InicioSesionComponent.vue').default);
+Vue.component('registro-component', require('./components/RegistroComponent.vue').default);
+Vue.component('index-component', require('./components/IndexComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
